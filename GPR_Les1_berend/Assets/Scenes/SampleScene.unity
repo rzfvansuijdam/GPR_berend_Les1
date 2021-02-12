@@ -133,7 +133,8 @@ GameObject:
   - component: {fileID: 319376394}
   - component: {fileID: 319376393}
   - component: {fileID: 319376392}
-  - component: {fileID: 319376391}
+  - component: {fileID: 319376396}
+  - component: {fileID: 319376397}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -141,19 +142,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &319376391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 319376390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ac9b15f88f75044089393f473d2a1f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayHealth: {fileID: 0}
 --- !u!136 &319376392
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -223,12 +211,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319376390}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 387.7108, y: 228.57442, z: -67.35298}
+  m_LocalPosition: {x: 0.4, y: -0.8, z: 2.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &319376396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319376390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52abb8df806e5764191e938b30fbad19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Maxhealth: 100
+  currenthealth: 0
+--- !u!114 &319376397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319376390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac9b15f88f75044089393f473d2a1f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Maxhealth: 100
+  currenthealth: 100
+  DisplayHealth: {fileID: 757312995}
 --- !u!1 &496514395
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,9 +571,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'helt
-
-'
+  m_Text: 
 --- !u!222 &757312996
 CanvasRenderer:
   m_ObjectHideFlags: 0
