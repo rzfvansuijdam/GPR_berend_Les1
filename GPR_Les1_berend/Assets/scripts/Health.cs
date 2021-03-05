@@ -19,12 +19,18 @@ public class Health : MonoBehaviour
         {
             TakeDamage(10);
         }
+
+
+        if (currenthealth <= 0) // If stats class' health var <= 0, destroy enemy object
+           Destroy(this.gameObject);
+        
     }
 
     void TakeDamage(int damage)
     {
         currenthealth -= damage;
     }
+
 
 }
 
